@@ -25,7 +25,7 @@ class BotController extends Controller
     public function config(){
 
 
-        $response = Telegram::setWebhook(['url' => 'https://76b32f91.ngrok.io/<token>/webhook']);
+        $response = Telegram::setWebhook(['url' => 'https://3911a5bd.ngrok.io/<token>/webhook']);
 
         $botId = $response->getId();
         $firstName = $response->getFirstName();

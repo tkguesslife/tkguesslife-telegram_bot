@@ -25,6 +25,20 @@ class BPICommand extends Command
     protected $description = "Command to get you bit coin equivalent Currency value";
 
     /**
+     * @var CoinDeskService
+     */
+    protected $coinDeskService;
+
+    /**
+     * BPICommand constructor.
+     */
+    public function __construct()
+    {
+        $container = app();
+        $this->coinDeskService =  $container->make(CoinDeskService::class);
+    }
+
+    /**
      * @param $arguments
      */
     public function handle($arguments)
@@ -35,7 +49,7 @@ class BPICommand extends Command
         $currency = 'USD';
         if(is_array($arrArgs = $this->validateArgs($arguments))){
             $this->replyWithMessage(['text' => 'Determining bit coin equivalent value ']);
-            $response =  CoinDeskService::convertToCurrency($arrArgs['amount'], $arrArgs['currency']);
+            $response =  $this->coinDeskService ->convertToCurrency($arrArgs['amount'], $arrArgs['currency']);
             // Reply with the commands list
             $this->replyWithMessage(['text' => $response]);
         }else{

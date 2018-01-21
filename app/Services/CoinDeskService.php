@@ -44,7 +44,7 @@ class CoinDeskService
      * @param string $currency
      * @return string
      */
-    public static function convertToCurrency($amount, $currency = 'USD'){
+    public function convertToCurrency($amount, $currency = 'USD'){
         $result = self::getBPIByCurrency($currency);
         $bitCoin = round($amount / $result['rate_float'],7);
         $output =  "$amount $currency is $bitCoin BTC ({$result['rate_float']} - 1 BTC)";

@@ -6,6 +6,7 @@ return [
     'async_requests' => false,
     'commands' => [
         App\Commands\StartCommand::class,
-        App\Commands\BPICommand::class
+        App\Commands\BPICommand::class,
+        App\Commands\GetUserIdCommand::class
         ]
 ];
