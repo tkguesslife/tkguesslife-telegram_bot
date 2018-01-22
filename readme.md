@@ -7,6 +7,13 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+# Requirements
+- PHP >= 5.6.4
+- OpenSSL PHP Extension
+- PDO PHP Extension
+- Mbstring PHP Extension
+- MySQL database
+
 # Getting started
 - Install dependecies via Composer `composer install`
 - Set MySQL database connection by editing `config\database.php` and add host, username, passwword and database name
