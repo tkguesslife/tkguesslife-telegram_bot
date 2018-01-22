@@ -28,6 +28,6 @@ class User extends Authenticatable
     ];
 
     public function UserBotConfig(){
-        return $this->hasOne('App\UserBotConfig');
+        return $this->hasOne('App\UserBotConfig')->get();
     }
 }

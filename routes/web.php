@@ -19,6 +19,12 @@ Route::get('/', function () {
 Route::get('/bot-config','Telegram\BotController@config')
         ->name('bot_config');
 
+Route::get('/set-webhook','Telegram\BotController@setWebhook')
+        ->name('set_webhook');
+
+Route::post('/bot-config','Telegram\BotController@update')
+        ->name('update_bot_config');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

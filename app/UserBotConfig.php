@@ -13,6 +13,13 @@ use Illuminate\Database\Eloquent\Model;
  */
 class UserBotConfig extends Model
 {
+    /**
+     * The table associated with the model.
+     *
+     * @var string
+     */
+    protected $table = 'user_bot_config';
+
     protected $fillable = ['bot_token', 'default_currency','webhook_url'];
 
     /**

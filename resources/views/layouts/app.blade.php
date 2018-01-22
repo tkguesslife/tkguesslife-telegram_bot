@@ -39,6 +39,7 @@
                         &nbsp;@if (Auth::user())
                             <li><a href="{{ route('home') }}">Home</a></li>
                             <li><a href="{{ route('bot_config') }}">Bot config</a></li>
+                            <li><a href="{{ route('set_webhook') }}">Set webhook</a></li>
                           @endif
                     </ul>
 
