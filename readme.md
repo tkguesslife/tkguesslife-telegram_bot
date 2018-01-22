@@ -16,7 +16,7 @@
 - Update Web hook URL by editing `config\telegram.php`
 - Open browser and navigate to "https://project_url/"
 - Register and login
-- Set Telegram bot web hook by link "Set webhook"
+- Set Telegram bot web hook by clicking the link "Set webhook"
 
 Application should be up and running.
 
