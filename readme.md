@@ -7,6 +7,24 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+# Getting started
+- Install dependecies via Composer `composer install`
+- Set MySQL database connection by editing `config\database.php` and add host, username, passwword and database name
+- Create database on mysql server
+- Execute reset script to generate databse tables `sh scripts\reset.sh`
+- Update Telegram Token by editing `config\telegram.php`
+- Update Web hook URL by editing `config\telegram.php`
+- Open browser and navigate to "https://project_url/"
+- Register and login
+- Set Telegram bot web hook by link "Set webhook"
+
+Application should be up and running.
+
+# On Telegram Application
+- Search and add @tkbpi bot
+- Send the following text to see all available commands : `/start`
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
